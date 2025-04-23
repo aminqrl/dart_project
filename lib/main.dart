@@ -1,33 +1,42 @@
 
+import 'dart:io';
 
 void main(){
+  int a, b, n, x;
 
-var a, b, result;
-  a=7;
-  b=3;
-  print('First Number a: $a');
-  print("Second Number b: $b");
+    // a number is odd or even
+      print('Enter a Number');
+      n= int.parse(stdin.readLineSync()!);
+      if(n%2==0){
+        print('the Number is even');
+      }else{
+        print('the Number is odd');
+      }
 
+      // a number is positive or negative
+  print('Enter a Number');
+  x= int.parse(stdin.readLineSync()!);
+  if(x>0){
+    print('a Number positive');
+  }
+else if(x<0){
+    print('a Number negative');
+  }
+else{
+    print('a Number is zero');
+  }
 
-  result = a+b;
-  print("Sum of $a and $b and is $result");
-
-result = a-b;
-print("Difference of $a and $b and is $result");
-
-result = (a/b);
-print("division of $a and $b and is $result");
-
-result = (a~/b);
-print("integer division of $a and $b and is $result");
-
-result = (a%b);
-print("Reminder of $a and $b and is $result");
-
-result = (a*b);
-print("Multiplication of $a and $b and is $result");
-
-}
+  // the smallest in 2 number
+     print('Enter first Number');
+     a= int.parse(stdin.readLineSync()!);
+     print('Enter Second Number');
+     b= int.parse(stdin.readLineSync()!);
+     if(a<b){
+       print(" $a is small number ");
+     }else{
+       print('$b is small number');
+     }
+   }
 
 
 
