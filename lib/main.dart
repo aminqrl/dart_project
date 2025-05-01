@@ -2,32 +2,39 @@
 import 'dart:io';
 
 void main(){
-int x, y;
-  print('enter x');
-x= int.parse(stdin.readLineSync()!);
-print('enter y');
-y= int.parse(stdin.readLineSync()!);
+int n1, n2, n3;
 
-if(x==0 && y==0){
-  print("origin");
-}else if(x>0 && y==0){
-  print(" x axis");
-}
-else if(x==0 && y>0){
-  print(" y axis");
-}
-else if(x>0 && y>0){
-  print(" first quadrant");
-}
-else if(x<0 && y>0){
-  print("Second quadrant");
-}else if(x<0 && y<0){
-  print("third quadrant ");
-}
-else if(x>0 && y<0){
-  print("fourth quadrant ");
-}
+  print('enter First Number');
+ n1= int.parse(stdin.readLineSync()!);
 
+  print('enter Second Number');
+ n2= int.parse(stdin.readLineSync()!);
+
+print('enter Third Number');
+n3= int.parse(stdin.readLineSync()!);
+if(n1 > n2 && n1 > n3){
+  print(" First Number is Large");
+}
+if(n2 > n1 && n2 > n3){
+  print(" Second Number is Large");
+}
+ if(n3 > n1 && n3 > n2){
+  print(" Third Number is Large");
+}
+ if(n1==n2 ){
+  print("the first and second number is equal");
+}
+if(n1==n3){
+  print("the first and third number is equal");
+} if(n2==n3){
+  print("second and third number is equal");
+}
+if(n1==n2 && n1==n3 && n2==n3){
+  print('the all three number is equal');
+}
+if(n1==n2){
+  print("the first and second number is equal");
+}
 }
 
 
